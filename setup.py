@@ -101,7 +101,11 @@ that an operation starts as soon as the operands are ready.
         'Topic :: Software Development :: Libraries :: Application Frameworks',
         'Topic :: Software Development :: Libraries :: Python Modules'
         ],
-      cmdclass={'sdist': hg_sdist}
+      cmdclass={'sdist': hg_sdist},
+      install_requires=[
+        'gmpy',
+        'twisted',
+      ],
       )
 
 # When releasing VIFF, notify these sites:
