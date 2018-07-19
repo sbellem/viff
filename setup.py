@@ -106,6 +106,7 @@ that an operation starts as soon as the operands are ready.
         'gmpy',
         'twisted',
       ],
+      scripts=['apps/generate-config-files.py'],
       )
 
 # When releasing VIFF, notify these sites:
