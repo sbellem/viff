@@ -1,0 +1,8 @@
+sudo: required
+
+services:
+  - docker
+
+install: docker-compose build --no-cache
+
+script: docker-compose run --rm viff trial --reactor viff viff
