@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  viff:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/usr/src/viff
+    command: trial --reactor viff viff
